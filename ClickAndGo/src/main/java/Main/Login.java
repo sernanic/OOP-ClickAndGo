@@ -7,7 +7,7 @@ package LoginGUI;
 
 /**
  *
- * @author Family Rojas
+ * @author Emily Rojas
  */
 public class Login extends javax.swing.JFrame {
 
