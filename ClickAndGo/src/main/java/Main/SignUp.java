@@ -7,7 +7,7 @@ package LoginGUI;
 
 /**
  *
- * @author Family Rojas
+ * @author Emily Rojas
  */
 public class SignUp extends javax.swing.JFrame {
 
