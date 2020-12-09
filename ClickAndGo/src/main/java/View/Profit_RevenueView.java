@@ -48,6 +48,11 @@ public class Profit_RevenueView extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 24)); // NOI18N
         jLabel1.setText("ClickAndGo");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
 
         jLabel2.setText("Cart");
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -233,6 +238,13 @@ public class Profit_RevenueView extends javax.swing.JFrame {
         LoginView vie = new LoginView();
         vie.setVisible(true);
     }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+        CustomerPageView vie = new CustomerPageView();
+        vie.setVisible(true);
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
      * @param args the command line arguments

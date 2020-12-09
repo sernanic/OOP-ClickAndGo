@@ -190,6 +190,11 @@ public class SignUpView extends javax.swing.JFrame {
 
         jLabel12.setFont(new java.awt.Font("Lucida Bright", 2, 18)); // NOI18N
         jLabel12.setText("ClickAndGo");
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
 
         accountButton.setBackground(new java.awt.Color(255, 255, 255));
         accountButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/account.png"))); // NOI18N
@@ -328,6 +333,13 @@ public class SignUpView extends javax.swing.JFrame {
         ShoppingCartView vie = new ShoppingCartView();
         vie.setVisible(true);
     }//GEN-LAST:event_cartButtoncartButtonActionPerformed
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+        CustomerPageView vie = new CustomerPageView();
+        vie.setVisible(true);
+    }//GEN-LAST:event_jLabel12MouseClicked
 
     /**
      * @param args the command line arguments

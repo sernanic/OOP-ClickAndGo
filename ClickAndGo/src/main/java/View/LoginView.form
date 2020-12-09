@@ -253,6 +253,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="ClickAndGo"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel12MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="accountButton">
           <Properties>

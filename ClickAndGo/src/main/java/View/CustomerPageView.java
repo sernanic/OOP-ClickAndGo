@@ -202,6 +202,9 @@ public class CustomerPageView extends javax.swing.JFrame {
 
     private void accountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountButtonActionPerformed
         // TODO add your handling code here:
+        this.setVisible(false);
+        LoginView vie = new LoginView();
+        vie.setVisible(true);
     }//GEN-LAST:event_accountButtonActionPerformed
 
     private void wishlistButtonwishlistButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wishlistButtonwishlistButtonActionPerformed
