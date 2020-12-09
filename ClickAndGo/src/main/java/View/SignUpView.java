@@ -281,6 +281,7 @@ public class SignUpView extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void emailField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailField1ActionPerformed
@@ -297,6 +298,9 @@ public class SignUpView extends javax.swing.JFrame {
 
     private void gotoLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gotoLoginButtonActionPerformed
         // TODO add your handling code here:
+        this.setVisible(false);
+        LoginView vie = new LoginView();
+        vie.setVisible(true);
     }//GEN-LAST:event_gotoLoginButtonActionPerformed
 
     private void searchBarsearchBarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBarsearchBarActionPerformed

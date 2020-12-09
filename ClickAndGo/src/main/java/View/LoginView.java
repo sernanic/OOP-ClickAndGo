@@ -252,6 +252,9 @@ public class LoginView extends javax.swing.JFrame {
 
     private void GotoSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GotoSignUpActionPerformed
         // TODO add your handling code h
+        this.setVisible(false);
+        SignUpView vie = new SignUpView();
+        vie.setVisible(true);
     }//GEN-LAST:event_GotoSignUpActionPerformed
 
     private void cartButtoncartButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cartButtoncartButtonActionPerformed
