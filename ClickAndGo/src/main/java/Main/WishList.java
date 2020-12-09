@@ -5,10 +5,25 @@
  */
 package Main;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author 19546
  */
-public class WishList {
+public class WishList implements ProductList {
+    public void addProduct(Product P){
     
+        wishlist.add(P);
+        
+    }
+    
+    public void removeProduct(Product P){
+    
+        if(wishlist.contains(P)){
+        
+            wishlist.remove(P);
+        }
+    }
+    private ArrayList<Product> wishlist;
 }

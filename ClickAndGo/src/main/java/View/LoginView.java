@@ -138,8 +138,8 @@ public class LoginView extends javax.swing.JFrame {
         jLabel11.setText("Search");
 
         searchButton.setBackground(new java.awt.Color(255, 255, 255));
-        searchButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/search.png"))); // NOI18N
-        searchButton.setBorder(null);
+        searchButton.setText("Go");
+        searchButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         searchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchButtonsearchButtonActionPerformed(evt);
@@ -155,7 +155,7 @@ public class LoginView extends javax.swing.JFrame {
         });
 
         accountButton.setBackground(new java.awt.Color(255, 255, 255));
-        accountButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/account.png"))); // NOI18N
+        accountButton.setText("User");
         accountButton.setBorder(null);
         accountButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,7 +175,6 @@ public class LoginView extends javax.swing.JFrame {
 
         cartButton.setBackground(new java.awt.Color(255, 255, 255));
         cartButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        cartButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/shoppingcarticon.png"))); // NOI18N
         cartButton.setText("Cart");
         cartButton.setAlignmentY(0.0F);
         cartButton.setBorder(null);

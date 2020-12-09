@@ -7,9 +7,9 @@ package Main;
 
 /**
  *
- * @author Emily Rojas
+ * @author 19546
  */
-public class SignUp extends javax.swing.JFrame {
-
-               
+public interface ProductList {
+    void addProduct(Product P);
+    void removeProduct(Product P);
 }
