@@ -259,10 +259,16 @@ public class LoginView extends javax.swing.JFrame {
 
     private void cartButtoncartButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cartButtoncartButtonActionPerformed
         // TODO add your handling code here:
+        this.setVisible(false);
+        ShoppingCartView vie = new ShoppingCartView();
+        vie.setVisible(true);
     }//GEN-LAST:event_cartButtoncartButtonActionPerformed
 
     private void wishlistButtonwishlistButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wishlistButtonwishlistButtonActionPerformed
         // TODO add your handling code here:
+        this.setVisible(false);
+        WishListView vie = new WishListView();
+        vie.setVisible(true);
     }//GEN-LAST:event_wishlistButtonwishlistButtonActionPerformed
 
     private void accountButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountButtonActionPerformed
