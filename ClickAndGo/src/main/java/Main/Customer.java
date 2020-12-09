@@ -32,8 +32,15 @@ public class Customer extends User{
      return user.validateLogin(username, password);
     }
     
-    public void createCart(){
+    public void addToCart(Product P){
     
+        this.sc.addProduct(P);
+        
+    }
+    
+     public void addToWL(Product P){
+    
+        this.wl.addProduct(P);
         
     }
      

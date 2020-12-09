@@ -9,6 +9,7 @@ package Main;
  *
  * @author 19546
  */
-public class Profit_Revenue {
+public class ClickAndGoMain {
+  
     
 }

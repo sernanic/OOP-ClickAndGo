@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Main;
+
 import java.util.*;
 
 /**
@@ -11,14 +12,27 @@ import java.util.*;
  * @author 19546
  */
 public class Inventory {
+    private static Inventory allProdsInstance = null;
     
-    public void displayAllInventory(){}
-    public void displaySellerInventory(){}
-    public void addProduct(Product p){}
-    public void removeProduct(Product p){}
+    private Inventory(){}
     
-    private Product prod;
-    private Seller seller;
-    private ArrayList<Product> AllProds;
-    private static ArrayList<Product> SellerProds;
-} 
+    public static Inventory getInstance() 
+    { 
+        if (allProdsInstance == null) 
+            allProdsInstance = new Inventory(); 
+  
+        return allProdsInstance; 
+    }
+    
+    public void addToAllProds(Product P){
+    
+        allProds.add(P);
+    }
+    
+    public ArrayList<Product> getAllProds(){
+    
+        return allProds;
+    }
+    
+    private static ArrayList<Product> allProds;
+}

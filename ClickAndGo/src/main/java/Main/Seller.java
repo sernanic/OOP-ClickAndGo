@@ -5,6 +5,8 @@
  */
 package Main;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author 19546
@@ -31,10 +33,51 @@ public class Seller extends User{
     
      return user.validateLogin(username, password);
     }
+    
+    public void addProds(Product p){
+    
+        SellerProds.add(p);
+        AllProds.addToAllProds(p);
+    }
+    
+    public double getRevenue(){
+    
+        double temp = 0;
+        
+        for(Product p:SellerProds){
+        
+            temp += p.getSellPrice();
+        }
+        
+        return temp;
+    }
+    
+    public double getCosts(){
+    
+        double temp = 0;
+        
+        for(Product p:SellerProds){
+        
+            temp += p.getInvoicePrice();
+        }
+        
+        return temp;
+    }
+    
+    public double getProfit(){
+    
+        return this.getRevenue() - this.getCosts();
+    }
+    
+   
      
     private String Username;
     private String Password;
-    private ProductList pl;
+    private ArrayList<Product> SellerProds;
+    private Inventory AllProds = Inventory.getInstance();
     private Users user;
+    private double Revenue;
+    private double Costs;
+    private double Profit;
     
 }

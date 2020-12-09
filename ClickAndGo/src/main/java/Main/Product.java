@@ -11,16 +11,38 @@ package Main;
  */
 public class Product {
 
-    public Product(String name, int quantity, double price, double revenue, double sales) {
+    public Product(String name, int quantity, double invoicePrice, double sellPrice) {
         this.name = name;
         this.quantity = quantity;
-        this.price = price;
-        this.revenue = revenue;
-        this.sales = sales;
+        this.invoicePrice = invoicePrice;
+        this.sellPrice = sellPrice;
+       
         
     }
-    
 
+    public double getInvoicePrice() {
+        return invoicePrice;
+    }
+
+    public void setInvoicePrice(double invoicePrice) {
+        this.invoicePrice = invoicePrice;
+    }
+
+    public double getSellPrice() {
+        return sellPrice;
+    }
+
+    public void setSellPrice(double sellPrice) {
+        this.sellPrice = sellPrice;
+    }
+    
+    public void printProduct(){
+    
+        System.out.print("Product Name: " + name + "\n" +
+                          "Price: $" + quantity + "\n");
+    
+    }
+    
     public String getName() {
         return name;
     }
@@ -37,42 +59,15 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public double getPrice() {
-        return price;
-    }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
 
-    public double getRevenue() {
-        return revenue;
-    }
-
-    public void setRevenue(double revenue) {
-        this.revenue = revenue;
-    }
-
-    public double getSales() {
-        return sales;
-    }
-
-    public void setSales(double sales) {
-        this.sales = sales;
-    }
-
-    public double getProfit() {
-        double temp = this.getRevenue()- this.getSales();
-        return temp;
-    }
 
     
     
     private String name;
     private int quantity;
-    private double price;
-    private double revenue;
-    private double sales;
+    private double invoicePrice;
+    private double sellPrice;
     
     
 }

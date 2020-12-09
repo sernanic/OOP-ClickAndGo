@@ -5,10 +5,24 @@
  */
 package Controller;
 
+import Main.*;
+
 /**
  *
  * @author 19546
  */
 public class Profit_RevenueController {
     
+    public double updateProfit(){
+    
+        return sel.getProfit();
+        
+    }
+    public double updateRevenue(){
+    
+        return sel.getRevenue();
+    }
+    private Inventory all = Inventory.getInstance();
+    private Seller sel;
+
 }

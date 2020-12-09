@@ -128,6 +128,7 @@ public class LoginView extends javax.swing.JFrame {
         );
 
         heading.setBackground(new java.awt.Color(255, 255, 255));
+        heading.setPreferredSize(new java.awt.Dimension(878, 47));
 
         searchBar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -155,6 +156,7 @@ public class LoginView extends javax.swing.JFrame {
         });
 
         accountButton.setBackground(new java.awt.Color(255, 255, 255));
+        accountButton.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         accountButton.setText("User");
         accountButton.setBorder(null);
         accountButton.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +166,6 @@ public class LoginView extends javax.swing.JFrame {
         });
 
         wishlistButton.setBackground(new java.awt.Color(255, 255, 255));
-        wishlistButton.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         wishlistButton.setText("Wishlist");
         wishlistButton.setBorder(null);
         wishlistButton.addActionListener(new java.awt.event.ActionListener() {
@@ -174,7 +175,6 @@ public class LoginView extends javax.swing.JFrame {
         });
 
         cartButton.setBackground(new java.awt.Color(255, 255, 255));
-        cartButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         cartButton.setText("Cart");
         cartButton.setAlignmentY(0.0F);
         cartButton.setBorder(null);
@@ -224,7 +224,7 @@ public class LoginView extends javax.swing.JFrame {
                     .addGroup(headingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(wishlistButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(cartButton, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 1, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -232,13 +232,13 @@ public class LoginView extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Login, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(heading, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(heading, javax.swing.GroupLayout.DEFAULT_SIZE, 859, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(heading, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(heading, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
                 .addComponent(Login, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 

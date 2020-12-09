@@ -65,6 +65,7 @@ public class CustomerPageView extends javax.swing.JFrame {
         jLabel12.setText("ClickAndGo");
 
         accountButton.setBackground(new java.awt.Color(255, 255, 255));
+        accountButton.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         accountButton.setText("User");
         accountButton.setBorder(null);
         accountButton.addActionListener(new java.awt.event.ActionListener() {
@@ -74,7 +75,6 @@ public class CustomerPageView extends javax.swing.JFrame {
         });
 
         wishlistButton.setBackground(new java.awt.Color(255, 255, 255));
-        wishlistButton.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         wishlistButton.setText("Wishlist");
         wishlistButton.setBorder(null);
         wishlistButton.addActionListener(new java.awt.event.ActionListener() {
@@ -84,7 +84,6 @@ public class CustomerPageView extends javax.swing.JFrame {
         });
 
         cartButton.setBackground(new java.awt.Color(255, 255, 255));
-        cartButton.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         cartButton.setText("Cart");
         cartButton.setAlignmentY(0.0F);
         cartButton.setBorder(null);
